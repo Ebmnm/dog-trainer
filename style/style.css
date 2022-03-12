@@ -31,6 +31,13 @@ nav {
 
 nav h2 {
   padding-top: 25px;
+  font-size: 2em;
+}
+
+@media (max-width: 700px) {
+  nav h2 {
+    font-size: 1.5em;
+  }
 }
 
 .svg {
@@ -199,5 +206,21 @@ iframe {
 
 .bottom-btn:hover {
   cursor: pointer;
+}
+
+footer{
+  height: auto;
+  background-color: black;
+  color: white;
+  width: 100vw;
+text-align: center;
+}
+
+footer p {
+  font-size: .8em;
+  
+}
+footer h2 {
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */
