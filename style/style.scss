@@ -1,0 +1,179 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    background-color: #4cb9f8;
+    overflow-x: hidden;
+}
+nav {
+    background-color: black;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+nav h2 {
+    padding-top: 25px;
+}
+.svg{
+    margin-right: 20px;
+    margin-top:20px;
+}
+
+.hero {
+    width: 100vw;
+    height:100vh;
+    background-image: url("https://media.istockphoto.com/photos/furry-dog-smiling-with-tongue-out-picture-id1287452200?b=1&k=20&m=1287452200&s=170667a&w=0&h=1XDHJ1DNyzoZ1fellkNKHhmmORqx2Oqt-PSSFJ4eS50=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width:800px) {
+        background-size: contain;
+    }
+}  
+
+.hero-card {
+    height: auto;
+    width: 40%;
+    position: relative;
+    top:100px;
+    z-index: 2;
+    background-color: whitesmoke;
+    border: 2px black solid;
+    left:15px;
+    @media (max-width: 800px) {
+width: 100%;
+left:0;
+position: absolute;
+top:70vh
+    }
+    @media (max-width: 500px) {
+        top:40vh
+            }
+    h1 {
+        font-style: bold;
+        font-size: 3em;
+    }
+}
+
+
+.card-text {
+    margin: 1em;
+}
+
+.card-text p {
+margin-top: 60px;
+font-size: 1.3em;
+color: rgb(53, 52, 52);
+
+}
+
+.bottom {
+    width: 100vw;
+    height: auto;
+    background-color: #4cb9f8;
+    display: flex;
+    @media(max-width:650px) {
+        flex-direction: column;
+    }
+   
+  .bottom-text {
+      color: white;
+      padding:2em;
+      margin-left: 5%;
+      background-color: #2980b9;
+
+      h1 {
+        font-style: bold;
+        font-size: 2em;
+        margin-bottom:1em ;
+    }
+      li {
+          font-size: 1.5em;
+          background-color: #2980b9;
+         
+      }
+  }
+}
+iframe {
+    width: 50%;
+    height: 300px;
+    z-index: 4;
+    margin:2% 2%;
+    @media(max-width:650px) {
+      width: 80%;
+      margin: auto;
+      margin-top: 5em;
+    }
+    @media(max-width:500px) {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+      }
+}
+
+
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;
+    @media(max-width:800px){
+        margin-top: 5%;
+    }
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bottom-btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    background-color: #050005;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .bottom-btn:hover {
+      cursor: pointer;
+  }
